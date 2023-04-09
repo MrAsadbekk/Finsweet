@@ -1494,6 +1494,17 @@ a {
   line-height: 28px;
   color: #6d6e76;
 }
+.search__notFound {
+  text-align: center;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #232536;
+}
 
 @media only screen and (max-width: 1024px) {
   .search__img {
