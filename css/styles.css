@@ -919,6 +919,18 @@ a {
   background-repeat: no-repeat;
   background-position: 32px 32px;
 }
+.catagory__minititle {
+  color: black;
+}
+.catagory__text {
+  color: #000;
+}
+.catagory__link {
+  transition: all 0.3s;
+}
+.catagory__link:hover {
+  transform: scale(1.1);
+}
 
 @media only screen and (max-width: 1200px) {
   .catagory__container {
