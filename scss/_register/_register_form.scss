@@ -71,6 +71,22 @@
     background-color: transparent;
     border: 2px solid #232536;
   }
+
+  &__span {
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  // &__trueInput {
+  //   border: green 1px solid;
+  //   outline-color: green;
+  // }
 }
 
 @media only screen and (max-width: 768px) {

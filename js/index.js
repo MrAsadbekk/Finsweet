@@ -13,13 +13,13 @@ let url =
 fetch(`${url}`)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data.articles);
+    // console.log(data.articles);
 
     const newData = data.articles.slice(0, 3);
-    console.log(newData);
+    // console.log(newData);
 
     newData.map((data) => {
-      console.log(data);
+      // console.log(data);
 
       const miniBox = document.createElement("div");
       miniBox.classList.add("card__minibox");
@@ -52,13 +52,15 @@ fetch(`${url}`)
   })
   .catch((error) => console.log(error));
 
+//////////// search //////////////////////////////////
+
 fetch(`${url}`)
   .then((response) => response.json())
   .then((data) => {
     const newData = data.articles.slice(0, 4);
 
     newData.map((data) => {
-      console.log(data);
+      // console.log(data);
 
       const minibox = document.createElement("div");
       minibox.classList.add("search__minibox");
@@ -108,7 +110,7 @@ async function fetchData() {
       "https://newsapi.org/v2/everything?q=Apple&apiKey=e6721b7844fa4e1db86df00f773e0381";
   }
 
-  console.log(url);
+  // console.log(url);
 
   try {
     const response = await fetch(url);
@@ -160,5 +162,3 @@ searchForm.addEventListener("submit", (e) => {
 
   fetchData();
 });
-
-// registor validation
