@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login__html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="login__body">
     <header class="header">
       <div class="container header__container">
         <a class="header__logo" href="index.html"
@@ -36,34 +36,20 @@
         <button class="header__menu"></button>
       </div>
     </header>
-    <main>
-      <section class="register">
-        <div class="container register__container">
-          <h2 class="register__title">Register</h2>
-          <form class="register__form">
-            <input
-              type="text"
-              class="register__fname"
-              placeholder="Firstname"
-            />
-            <span class="register__span"></span>
-            <input type="text" class="register__lname" placeholder="Lastname" />
-            <span class="register__span"></span>
-            <input type="text" class="register__uname" placeholder="Username" />
-            <span class="register__span"></span>
+    <main class="login__main">
+      <section class="login">
+        <div class="container login__container">
+          <h2 class="login__title">Login</h2>
+          <form class="login__form">
+            <input type="text" class="login__name" placeholder="Username" />
+            <span class="login__span"></span>
             <input
               type="password"
-              class="register__password"
+              class="login__password"
               placeholder="Password"
             />
-            <span class="register__span"></span>
-            <input
-              type="password"
-              class="register__cpassword"
-              placeholder="Confirm password"
-            />
-            <span class="register__span"></span>
-            <button class="register__btn" type="submit">Register</button>
+            <span class="login__span"></span>
+            <button class="login__btn" type="submit">Login</button>
           </form>
         </div>
       </section>
@@ -98,6 +84,6 @@
         </ul>
       </div>
     </footer>
-    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>

@@ -1,0 +1,143 @@
+.login {
+  &__html {
+    height: 100%;
+  }
+
+  &__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    flex-grow: 1;
+  }
+
+  &__container {
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #232536;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__form input {
+    padding: 15px 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    outline-color: #ffd050;
+  }
+
+  &__form input::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    width: 63%;
+    background-color: #ffd050;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+    border: 2px solid #ffd050;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__btn:hover {
+    background-color: transparent;
+    border: 2px solid #232536;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .login {
+    &__form input {
+      width: 70%;
+    }
+
+    &__btn {
+      width: 74%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 120px;
+      margin-bottom: 160px;
+    }
+
+    &__form input {
+      width: 75%;
+    }
+
+    &__btn {
+      width: 79%;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .login {
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 100px;
+      margin-bottom: 120px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    &__form input {
+      width: 80%;
+      padding: 10px 15px;
+    }
+
+    &__form input::placeholder {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &__btn {
+      width: 90%;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
