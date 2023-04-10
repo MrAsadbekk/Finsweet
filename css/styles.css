@@ -1878,4 +1878,15 @@ a {
     font-size: 18px;
     line-height: 24px;
   }
+}
+.blog__html {
+  height: 100%;
+}
+.blog__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.blog__main {
+  flex-grow: 1;
 }/*# sourceMappingURL=styles.css.map */

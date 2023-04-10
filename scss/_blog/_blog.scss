@@ -1,0 +1,15 @@
+.blog {
+  &__html {
+    height: 100%;
+  }
+
+  &__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    flex-grow: 1;
+  }
+}
