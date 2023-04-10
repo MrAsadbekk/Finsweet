@@ -1772,13 +1772,12 @@ a {
 .login__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
 }
 .login__form input {
   padding: 15px 20px;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
   outline-color: #ffd050;
 }
 .login__form input::-moz-placeholder {
@@ -1817,6 +1816,16 @@ a {
 .login__btn:hover {
   background-color: transparent;
   border: 2px solid #232536;
+}
+.login__span {
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 @media only screen and (max-width: 1024px) {
