@@ -40,6 +40,7 @@
     line-height: 28px;
     color: #ffffff;
     transition: all 0.3s;
+    z-index: 11;
   }
 
   &__nav-link::after {
@@ -68,6 +69,7 @@
     color: #232536;
     border: 2px solid #fff;
     transition: all 0.3s;
+    z-index: 11;
   }
 
   &__btn:hover {

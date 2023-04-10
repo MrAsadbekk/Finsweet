@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category</title>
+    <title>Register</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- header qism barcha page lar uchun bir xil -->
     <header class="header">
       <div class="container header__container">
         <a class="header__logo" href="index.html"
@@ -38,22 +37,25 @@
       </div>
     </header>
     <main>
-      <section class="category__intro">
-        <div class="container category__intro-container">
-          <h2 class="category__intro-title">My posts</h2>
-          <a class="category__intro-link">Add post</a>
-        </div>
-      </section>
-      <section class="search">
-        <div class="container search__container">
-          <form class="search__form">
+      <section class="register">
+        <div class="container register__container">
+          <h2 class="register__title">Register</h2>
+          <form class="register__form">
+            <input type="text" class="register__name" placeholder="Firstname" />
+            <input type="text" class="register__lname" placeholder="Lastname" />
+            <input type="text" class="register__uname" placeholder="Username" />
             <input
-              class="search__input"
-              type="text"
-              placeholder="Searching ..."
+              type="password"
+              class="register__password"
+              placeholder="Password"
             />
+            <input
+              type="password"
+              class="register__cpassword"
+              placeholder="Confirm password"
+            />
+            <button class="register__btn">Register</button>
           </form>
-          <div class="search__box"></div>
         </div>
       </section>
     </main>

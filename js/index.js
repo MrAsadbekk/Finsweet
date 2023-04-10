@@ -160,3 +160,5 @@ searchForm.addEventListener("submit", (e) => {
 
   fetchData();
 });
+
+// registor validation

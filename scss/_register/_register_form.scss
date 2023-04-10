@@ -1,0 +1,136 @@
+.register {
+  &__container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 70px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #232536;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__form input {
+    padding: 15px 20px;
+    width: 60%;
+    border: 1px solid #6d6e76;
+    outline-color: #ffd050;
+    box-shadow: 0 0 1px 0 #6d6e76;
+  }
+
+  &__form input::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &__btn {
+    margin: 0;
+    padding: 15px 22px;
+    width: 63%;
+    margin-top: 30px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+    background-color: #ffd050;
+    border: 2px solid #ffd050;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__btn:hover {
+    background-color: transparent;
+    border: 2px solid #232536;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register {
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 42px;
+      line-height: 58px;
+    }
+
+    &__btn {
+      width: 67%;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .register {
+    &__form input {
+      width: 80%;
+    }
+
+    &__btn {
+      width: 88%;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .register {
+    &__container {
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &__form input {
+      width: 85%;
+      padding: 10px 15px;
+    }
+
+    &__form input::placeholder {
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    &__btn {
+      width: 92%;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
