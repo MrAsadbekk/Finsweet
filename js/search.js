@@ -62,61 +62,21 @@ async function fetchData() {
 
       pagenationBox.innerHTML = "";
 
-      const button1 = document.createElement("button");
-      const button2 = document.createElement("button");
-      const button3 = document.createElement("button");
-      const button4 = document.createElement("button");
-      const button5 = document.createElement("button");
-      button1.textContent = "1";
-      button2.textContent = "2";
-      button3.textContent = "3";
-      button4.textContent = "4";
-      button5.textContent = "5";
-      button1.classList.add("search__pagination-btn");
-      button2.classList.add("search__pagination-btn");
-      button3.classList.add("search__pagination-btn");
-      button4.classList.add("search__pagination-btn");
-      button5.classList.add("search__pagination-btn");
-      pagenationBox.appendChild(button1);
-      pagenationBox.appendChild(button2);
-      pagenationBox.appendChild(button3);
-      pagenationBox.appendChild(button4);
-      pagenationBox.appendChild(button5);
+      for (let i = 1; i <= 5; i++) {
+        const button = document.createElement("button");
+        button.classList.add("search__pagination-btn");
+        button.textContent = i;
 
-      button1.addEventListener("click", () => {
-        page = 1;
-        button1.classList.toggle("search__btn-active");
-        console.log(url);
-        fetchData();
-      });
+        if (page === i) {
+          button.classList.add("search__btn-active");
+        }
 
-      button2.addEventListener("click", () => {
-        page = 2;
-        button2.classList.toggle("search__btn-active");
-        console.log(url);
-        fetchData();
-      });
-
-      button3.addEventListener("click", () => {
-        page = 3;
-        button3.classList.toggle("search__btn-active");
-        console.log(url);
-        fetchData();
-      });
-
-      button4.addEventListener("click", () => {
-        page = 4;
-        button4.classList.toggle("search__btn-active");
-        console.log(url);
-        fetchData();
-      });
-
-      button5.addEventListener("click", () => {
-        page = 5;
-        button5.classList.toggle("search__btn-active");
-        console.log(url);
-        fetchData();
-      });
+        button.addEventListener("click", () => {
+          page = i;
+          fetchData();
+        });
+        pagenationBox.appendChild(button);
+      }
     }
   } catch (error) {
     console.log(error);
