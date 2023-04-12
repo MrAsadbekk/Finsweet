@@ -12,4 +12,106 @@
   &__main {
     flex-grow: 1;
   }
+
+  &__container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #232536;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__name {
+    padding: 15px 25px;
+    width: 60%;
+    outline-color: #ffd050;
+  }
+
+  &__status {
+    padding: 15px 25px;
+    width: 60%;
+    outline-color: #ffd050;
+  }
+
+  &__email {
+    padding: 15px 25px;
+    width: 60%;
+    outline-color: #ffd050;
+  }
+
+  &__tel {
+    padding: 15px 25px;
+    width: 60%;
+    outline-color: #ffd050;
+  }
+
+  &__img-add {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__form input::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+  }
+
+  &__form textarea {
+    max-width: 60%;
+    max-height: 100px;
+    min-width: 60%;
+    min-height: 100px;
+    padding: 15px 25px;
+    outline-color: #ffd050;
+  }
+
+  &__form textarea::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232536;
+  }
+
+  &__btn {
+    width: 64%;
+    padding: 10px 20px;
+    background-color: #ffd050;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+    border: 2px solid #ffd050;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__btn:hover {
+    background-color: transparent;
+    border: 2px solid #232536;
+  }
 }
