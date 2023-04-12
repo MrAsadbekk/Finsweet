@@ -7,6 +7,15 @@ let url = `https://newsapi.org/v2/everything?q=Apple&apiKey=e6721b7844fa4e1db86d
 let searchQuary = "Apple";
 const searchUrl = `https://newsapi.org/v2/everything?q=${searchQuary}&apiKey=e6721b7844fa4e1db86df00f773e0381`;
 
+const loadingBox = document.createElement("div");
+const loadingText = document.createElement("p");
+loadingText.textContent = "Loading...";
+loadingText.classList.add("loading__text");
+loadingBox.classList.add("loader");
+
+searchBox.appendChild(loadingBox);
+searchBox.appendChild(loadingText);
+
 async function fetchData() {
   const searchTerm = search.value;
 
