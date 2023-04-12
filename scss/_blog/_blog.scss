@@ -69,6 +69,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   &__form input::placeholder {
     font-family: "Inter";
     font-style: normal;
@@ -113,5 +114,273 @@
   &__btn:hover {
     background-color: transparent;
     border: 2px solid #232536;
+  }
+
+  // &__span {
+  //   color: red;
+  //   font-family: "Inter";
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   line-height: 28px;
+  // }
+
+  &__box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  &__add-name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #592ea9;
+  }
+
+  &__minibox-two {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__add-tel {
+    margin: 0;
+    padding: 0;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+  }
+
+  &__add-email {
+    margin: 0;
+    padding: 0;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+  }
+
+  &__add-status {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+  }
+
+  &__add-text {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6d6e76;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog {
+    &__name {
+      width: 75%;
+    }
+
+    &__status {
+      width: 75%;
+    }
+
+    &__email {
+      width: 75%;
+    }
+
+    &__tel {
+      width: 75%;
+    }
+
+    &__form textarea {
+      max-width: 75%;
+      max-height: 90px;
+      min-width: 75%;
+      min-height: 90px;
+    }
+
+    &__btn {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog {
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__name {
+      padding: 10px 20px;
+      width: 80%;
+    }
+
+    &__status {
+      padding: 10px 20px;
+      width: 80%;
+    }
+
+    &__email {
+      padding: 10px 20px;
+      width: 80%;
+    }
+
+    &__tel {
+      padding: 10px 20px;
+      width: 80%;
+    }
+
+    &__form textarea {
+      max-width: 80%;
+      max-height: 90px;
+      min-width: 80%;
+      min-height: 90px;
+    }
+
+    &__btn {
+      width: 88%;
+    }
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .blog {
+    &__box {
+      flex-direction: column;
+    }
+
+    &__avatar {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__add-name {
+      text-align: center;
+    }
+
+    &__add-status {
+      text-align: center;
+    }
+
+    &__add-text {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .blog {
+    &__minibox-two {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .blog {
+    &__container {
+      margin-top: 100px;
+      margin-bottom: 70px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    &__name {
+      width: 90%;
+    }
+
+    &__status {
+      width: 90%;
+    }
+
+    &__email {
+      width: 90%;
+    }
+
+    &__tel {
+      width: 90%;
+    }
+
+    &__form textarea {
+      max-width: 90%;
+      max-height: 80px;
+      min-width: 90%;
+      min-height: 80px;
+    }
+
+    &__btn {
+      width: 95%;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__form input::placeholder {
+      font-size: 12px;
+    }
+
+    &__avatar {
+      width: 200px;
+      height: 200px;
+    }
+
+    &__add-name {
+      font-size: 24px;
+      line-height: 26px;
+    }
+
+    &__add-tel {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__add-email {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__add-status {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    &__add-text {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }

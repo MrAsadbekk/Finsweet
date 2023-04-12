@@ -41,16 +41,23 @@
         <div class="container blog__container">
           <h3 class="blog__title">Blog Post</h3>
           <form class="blog__form">
+            <input type="hidden" class="blog__post-id" />
             <input type="text" placeholder="Firstname" class="blog__name" />
+            <span class="blog__span"></span>
             <input type="text" placeholder="Status" class="blog__status" />
+            <span class="blog__span"></span>
             <input type="email" placeholder="email" class="blog__email" />
+            <span class="blog__span"></span>
             <input type="tel" placeholder="Phone" class="blog__tel" />
+            <span class="blog__span"></span>
             <textarea
               class="blog__textarea"
               placeholder="tell us about yourself"
             ></textarea>
+            <span class="blog__span"></span>
             <input type="file" placeholder="add image" class="blog__img-add" />
-            <button class="blog__btn">Add Post</button>
+            <span class="blog__span"></span>
+            <button class="blog__btn" type="submit">Add Post</button>
           </form>
         </div>
       </section>
